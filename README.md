@@ -127,11 +127,11 @@ How to check if a cron pattern is valid:
 
 ```javascript
 try {
-	new CronJob('invalid cron pattern', function() {
-		console.log('this should not be printed');
-	})
+  new CronJob('invalid cron pattern', function() {
+    console.log('this should not be printed');
+  })
 } catch(ex) {
-	console.log("cron pattern not valid");
+  console.log("cron pattern not valid");
 }
 ```
 
